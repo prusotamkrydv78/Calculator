@@ -11,10 +11,10 @@ export default styles = StyleSheet.create({
     marginTop: "10%",
   },
   result: {
-    elevation: 10,
+    elevation: 5,
     backgroundColor: "white",
     width: "90%",
-    maxHeight: "30%",
+    maxHeight: "35%",
     borderRadius: 5,
     display: "flex",
     padding: 20,
@@ -25,10 +25,9 @@ export default styles = StyleSheet.create({
   },
   keyPad: {
     marginTop: 30,
-    minHeight: "68%",
+    minHeight: "65%",
     display: "flex",
-    width: "100%",
-    paddingRight: 20,
+    width: "90%",
   },
   columnKeys: {
     flexDirection: "row",
@@ -37,9 +36,9 @@ export default styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   button: {
-    elevation: 10,
-    height: 83,
-    width: 83,
+    elevation: 5,
+    height: 63,
+    width: 63,
     backgroundColor: "white",
     margin: 10,
     display: "flex",
