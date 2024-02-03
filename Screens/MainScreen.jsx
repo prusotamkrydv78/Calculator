@@ -1,7 +1,7 @@
 import { View, Text, ScrollView, Pressable } from "react-native";
 import React from "react";
 import styles from "../Styles/MainScreen";
-import ColumnKeys from "../Components/ColumnKeys";
+// import ColumnKeys from "../Components/ColumnKeys";
 const MainScreen = () => {
   return (
     <View style={styles.main}>
@@ -9,46 +9,121 @@ const MainScreen = () => {
         <Text style={styles.calculatedNumber}>354</Text>
       </ScrollView>
       <View style={styles.keyPad}>
-        <ColumnKeys
-          key1="AC"
-          green="white"
-          yellow="yellow"
-          key2="()"
-          key3={"%"}
-          key4={"/"}
-        />
-        <ColumnKeys
-          key1="7"
-          yellow={"white"}
-          green="white"
-          key2="8"
-          key3={"9"}
-          key4={"*"}
-        />
-        <ColumnKeys
-          key1="4"
-          yellow={"white"}
-          green="white"
-          key2="5"
-          key3={"6"}
-          key4={"-"}
-        />
-        <ColumnKeys
-          key1="1"
-          yellow={"white"}
-          green="white"
-          key2="2"
-          key3={"3"}
-          key4={"+"}
-        />
-        <ColumnKeys
-          key1="0"
-          key2="."
-          key3={"<"}
-          key4={"="}
-          yellow={"white"}
-          green="lightgreen"
-        />
+        <View style={styles.columnKeys}>
+          <Pressable>
+            <View style={[styles.button, { backgroundColor: "orange" }]}>
+              <Text style={styles.buttonKey}>AC </Text>
+            </View>
+          </Pressable>
+          <Pressable>
+            <View style={styles.button}>
+              <Text style={styles.buttonKey}>()</Text>
+            </View>
+          </Pressable>
+
+          <Pressable>
+            <View style={[styles.button, { backgroundColor: "white" }]}>
+              <Text style={styles.buttonKey}>%</Text>
+            </View>
+          </Pressable>
+          <Pressable>
+            <View style={[styles.button, { backgroundColor: "white" }]}>
+              <Text style={styles.buttonKey}>/</Text>
+            </View>
+          </Pressable>
+        </View>
+        <View style={styles.columnKeys}>
+          <Pressable>
+            <View style={[styles.button]}>
+              <Text style={styles.buttonKey}>7 </Text>
+            </View>
+          </Pressable>
+          <Pressable>
+            <View style={styles.button}>
+              <Text style={styles.buttonKey}>8</Text>
+            </View>
+          </Pressable>
+
+          <Pressable>
+            <View style={[styles.button, { backgroundColor: "white" }]}>
+              <Text style={styles.buttonKey}>9</Text>
+            </View>
+          </Pressable>
+          <Pressable>
+            <View style={[styles.button, { backgroundColor: "white" }]}>
+              <Text style={styles.buttonKey}>*</Text>
+            </View>
+          </Pressable>
+        </View>
+        <View style={styles.columnKeys}>
+          <Pressable>
+            <View style={[styles.button]}>
+              <Text style={styles.buttonKey}>4 </Text>
+            </View>
+          </Pressable>
+          <Pressable>
+            <View style={styles.button}>
+              <Text style={styles.buttonKey}>5</Text>
+            </View>
+          </Pressable>
+
+          <Pressable>
+            <View style={[styles.button, { backgroundColor: "white" }]}>
+              <Text style={styles.buttonKey}>6</Text>
+            </View>
+          </Pressable>
+          <Pressable>
+            <View style={[styles.button, { backgroundColor: "white" }]}>
+              <Text style={styles.buttonKey}>-</Text>
+            </View>
+          </Pressable>
+        </View>
+        <View style={styles.columnKeys}>
+          <Pressable>
+            <View style={[styles.button]}>
+              <Text style={styles.buttonKey}>1 </Text>
+            </View>
+          </Pressable>
+          <Pressable>
+            <View style={styles.button}>
+              <Text style={styles.buttonKey}>2</Text>
+            </View>
+          </Pressable>
+
+          <Pressable>
+            <View style={[styles.button, { backgroundColor: "white" }]}>
+              <Text style={styles.buttonKey}>3</Text>
+            </View>
+          </Pressable>
+          <Pressable>
+            <View style={[styles.button, { backgroundColor: "white" }]}>
+              <Text style={styles.buttonKey}>+</Text>
+            </View>
+          </Pressable>
+        </View>
+        <View style={styles.columnKeys}>
+          <Pressable>
+            <View style={[styles.button]}>
+              <Text style={styles.buttonKey}>0 </Text>
+            </View>
+          </Pressable>
+          <Pressable>
+            <View style={styles.button}>
+              <Text style={styles.buttonKey}>.</Text>
+            </View>
+          </Pressable>
+
+          <Pressable>
+            <View style={[styles.button, { backgroundColor: "white" }]}>
+              <Text style={styles.buttonKey}> {"<"} </Text>
+            </View>
+          </Pressable>
+          <Pressable>
+            <View style={[styles.button, { backgroundColor: "lightgreen" }]}>
+              <Text style={styles.buttonKey}>=</Text>
+            </View>
+          </Pressable>
+        </View>
       </View>
     </View>
   );

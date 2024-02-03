@@ -30,6 +30,7 @@ export default styles = StyleSheet.create({
     width: "90%",
   },
   columnKeys: {
+    display: "flex",
     flexDirection: "row",
     width: "100%",
     backgroundColor: "white",
